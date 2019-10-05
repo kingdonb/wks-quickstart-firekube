@@ -12,6 +12,7 @@ spec:
   providerSpec:
     value:
       apiVersion: baremetalproviderspec/v1alpha1
+      controlPlaneEndpoint: 172.17.0.2:6443
       kind: BareMetalClusterProviderSpec
       sshKeyPath: cluster-key
       user: root

@@ -5,7 +5,7 @@ set -euo pipefail
 JK_VERSION=0.3.0
 FOOTLOOSE_VERSION=0.6.2
 IGNITE_VERSION=0.5.4
-WKSCTL_VERSION=0.8.1
+WKSCTL_VERSION=0.8.0
 
 log() {
     echo "•" $*
@@ -399,7 +399,7 @@ jk generate -f config.yaml -f $status setup.js
 rm -f $status
 
 log "Updating container images and git parameters"
-wksctl init --git-url=$(git_http_url $(git config --get remote.origin.url)) --git-branch=$(git rev-parse --abbrev-ref HEAD)
+wksctl init --git-url=$(git_ssh_url $(git config --get remote.origin.url)) --git-branch=$(git rev-parse --abbrev-ref HEAD)
 
 log "Pushing initial cluster configuration"
 git add config.yaml footloose.yaml machines.yaml flux.yaml wks-controller.yaml
@@ -408,5 +408,5 @@ git diff-index --quiet HEAD || git commit -m "Initial cluster configuration"
 git push
 
 log "Installing Kubernetes cluster"
-wksctl apply --git-url=$(git_http_url $(git config --get remote.origin.url)) --git-branch=$(git rev-parse --abbrev-ref HEAD) $git_deploy_key
+wksctl apply --git-url=$(git_ssh_url $(git config --get remote.origin.url)) --git-branch=$(git rev-parse --abbrev-ref HEAD) $git_deploy_key
 wksctl kubeconfig

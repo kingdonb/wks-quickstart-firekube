@@ -38,6 +38,7 @@ const footloose = config => ({
     spec: {
       image: image(config),
       name: 'node%d',
+      networks: ['footloose-cluster'],
       backend: config.backend,
       ignite: {
         cpus: 2,

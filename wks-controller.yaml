@@ -42,7 +42,7 @@ spec:
         operator: Exists
       containers:
       - name: controller
-        image: kingdonb/wks-controller:0.8.0-20-gbfd962b
+        image: kingdonb/wks-controller:0.8.0-21-g0bcb1c1
         command:
         - /bin/controller
         - --verbose

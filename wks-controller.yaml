@@ -47,7 +47,7 @@ spec:
           value: 172.17.0.1
         - name: FOOTLOOSE_BACKEND
           value: docker
-        image: quay.io/kingdonb/controller:0.8.2-alpha.3-1-g5666d7b
+        image: quay.io/kingdonb/controller:0.8.2-alpha.3-3-g4b5d307
         command:
         - /bin/controller
         - --verbose

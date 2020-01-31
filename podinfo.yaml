@@ -65,7 +65,7 @@ items:
           env:
           - name: PODINFO_UI_COLOR
             value: '#34577c'
-          image: stefanprodan/podinfo:3.2.0
+          image: kingdonb/podinfo:3.2.0
           imagePullPolicy: IfNotPresent
           livenessProbe:
             exec:

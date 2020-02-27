@@ -80,6 +80,8 @@ spec:
       app: emoji-svc
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: emoji-svc
     spec:
@@ -113,6 +115,8 @@ spec:
       app: vote-bot
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: vote-bot
     spec:
@@ -144,6 +148,8 @@ spec:
       app: voting-svc
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: voting-svc
     spec:
@@ -181,6 +187,8 @@ spec:
       app: web-svc
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: web-svc
     spec:

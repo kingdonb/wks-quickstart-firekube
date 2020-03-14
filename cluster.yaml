@@ -11,9 +11,9 @@ spec:
     serviceDomain: cluster.local
   providerSpec:
     value:
+      imageRepository: 172.25.0.2:5000
       apiVersion: baremetalproviderspec/v1alpha1
       kind: BareMetalClusterProviderSpec
-      sshKeyPath: cluster-key
       user: root
       os:
         files:

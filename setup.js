@@ -85,8 +85,12 @@ const Machine = ({ id, privateIP, sshPort, role }) => ({
     namespace: 'weavek8sops'
   },
   spec: {
+    versions: {
+      kubelet: '1.14.1'
+    },
     providerSpec: {
       value: {
+        imageRespository: '172.25.0.2:5000',
         apiVersion: 'baremetalproviderspec/v1alpha1',
         kind: 'BareMetalMachineProviderSpec',
         public: {

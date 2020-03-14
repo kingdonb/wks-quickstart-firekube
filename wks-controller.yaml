@@ -42,7 +42,7 @@ spec:
         operator: Exists
       containers:
       - name: controller
-        image: netmoom.nerdland.local:4999/wksctl/controller:master-3620b63d
+        image: netmoom.nerdland.local:4999/wksctl/controller:0.8.1
         command:
         - /bin/controller
         - --verbose

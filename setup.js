@@ -90,7 +90,7 @@ const Machine = ({ id, privateIP, sshPort, role }) => ({
     },
     providerSpec: {
       value: {
-        imageRespository: '172.25.0.2:5000',
+        imageRespository: 'netmoom.nerdland.local:4999',
         apiVersion: 'baremetalproviderspec/v1alpha1',
         kind: 'BareMetalMachineProviderSpec',
         public: {

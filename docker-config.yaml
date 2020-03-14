@@ -11,9 +11,9 @@ data:
         "max-size": "100m"
       },
       "insecure-registries": [
+        "netmoom.nerdland.local:4999",
         "172.25.0.2:5000",
-        "registry.default.svc:5000",
-        "netmoom.nerdland.local:4999"
+        "registry.default.svc:5000"
       ],
       "exec-opts": [
         "native.cgroupdriver=cgroupfs"

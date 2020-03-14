@@ -11,7 +11,7 @@ spec:
     serviceDomain: cluster.local
   providerSpec:
     value:
-      imageRepository: 172.25.0.2:5000
+      imageRepository: netmoom.nerdland.local:4999
       apiVersion: baremetalproviderspec/v1alpha1
       kind: BareMetalClusterProviderSpec
       user: root

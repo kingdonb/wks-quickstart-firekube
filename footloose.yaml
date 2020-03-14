@@ -9,7 +9,7 @@ machines:
       cpus: 2
       diskSize: 30GB
       kernel: weaveworks/ignite-kernel:4.19.47
-      memory: 1GB
+      memory: 3GB
     image: weaveworks/ignite-centos:firekube-pre3
     name: node%d
     portMappings:

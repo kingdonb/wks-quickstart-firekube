@@ -6,6 +6,7 @@ metadata:
 data:
   daemon.json: |
     {
+      "dns": [ "8.8.8.8", "8.8.4.4" ],
       "log-driver": "json-file",
       "log-opts": {
         "max-size": "100m"
